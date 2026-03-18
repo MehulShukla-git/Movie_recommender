@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 AI Movie Magic - Bollywood & Hollywood Recommender</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Floating particles -->
+  <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="particle" style="left: 30%; animation-delay: -7s;"></div>
+  <div class="particle" style="left: 50%; animation-delay: -14s;"></div>
+  <div class="particle" style="left: 70%; animation-delay: -3s;"></div>
+  <div class="particle" style="left: 90%; animation-delay: -11s;"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1><i class="fas fa-film"></i> Movie Magic AI</h1>
+      <p>Hollywood • Bollywood • Tollywood - Get Perfect Recommendations Instantly!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <div class="search-box">
+        <input type="text" id="movie" list="movie-list" placeholder="🎥 Inception • DDLJ • RRR • Baahubali..." autocomplete="off">
+        <datalist id="movie-list"></datalist>
+        <button class="recommend-btn" onclick="getMovies()">
+          <i class="fas fa-search"></i> Search & Recommend
+        </button>
+        <button class="random-btn" id="randomBtn">
+          <i class="fas fa-dice"></i> Random
+        </button>
+      </div>
+      <div id="loading" class="loading hidden">
+        <i class="fas fa-brain fa-spin"></i> AI thinking... (4 algorithms computing)
+      </div>
+    </section>
+
+    <section id="results" class="results-grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
