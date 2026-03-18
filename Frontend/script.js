@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:8000";
+const API = "https://movie-recommender-up9p.onrender.com";
 
 const movieInput = document.getElementById("movie");
 const loading = document.getElementById("loading");
